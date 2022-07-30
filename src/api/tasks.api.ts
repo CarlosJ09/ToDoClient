@@ -2,7 +2,7 @@ import axios from "axios";
 import { Task } from "../types/types";
 
 export const getTasksRequest = async () =>
-  await axios.get("http://localhost:4000/tasks");
+  await axios.get("https://todo-mysql-crud.herokuapp.com/tasks");
 
 export const createTaskRequest = async (task: Task) =>
   await axios.post("https://todo-mysql-crud.herokuapp.com/tasks", task);
